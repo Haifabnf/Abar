@@ -9,82 +9,92 @@ import SwiftUI
 
 struct Details: View {
     
-    @State private var recieverName: String = ""
-    @State private var recieverNumber: String = ""
+    @State var recieverName: String = ""
+    @State var recieverNumber: String = ""
     
-    @State private var wakeUp = Date.now
-
+    @State var date: Date = Date()
+    @State var showDatePicker = false
     
     var body: some View {
         
         NavigationView{
             
             ZStack {
-                Color(.f3)
+                Color(.f2)
                     .ignoresSafeArea()
                 VStack{
 
                     //Card Preview
-                        Rectangle()
-                            .frame(width: 300, height: 360)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .shadow(color: Color(red: 0.5, green: 0.5, blue: 0.5).opacity(0.25), radius: 10, x: 10, y: 10)
-                            .padding()
-                        
-                            
+                    Rectangle()
+                        .frame(width: 300, height: 360)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .shadow(color: Color(red: 0.5, green: 0.5, blue: 0.5).opacity(0.25), radius: 10, x: 10, y: 10)
+                        .padding()
+                    
+                    
                     List{
-                        Section(header: CustomText("Reciever Details")){
-                            TextField("Reciever Name", text: $recieverName)
+                        Section(header: CustomText("Details")){
+                            TextField("Name", text: $recieverName)
                                 .background(.white)
                                 .cornerRadius(10)
                                 .foregroundColor(.black)
                                 .padding(.horizontal)
                             
-                            TextField("Reciever Number", text: $recieverNumber)
+                            TextField("Number", text: $recieverNumber)
                                 .background(.white)
                                 .cornerRadius(10)
                                 .foregroundColor(.black)
                                 .padding(.horizontal)
                         }
-                    
-            
-                    
+                        
                         Section(header: CustomText("Schedule Time")){
-                            DatePicker("Select Date", selection: $wakeUp, in: Date()...)
-                                .background(.white)
-                                .cornerRadius(10)
-                                .accentColor(.purple)
-                                //.datePickerStyle(.graphical)
-                                //.datePickerStyle(.compact)
-                                //.datePickerStyle(.wheel)
-                                .datePickerStyle(.automatic)
+                            
+                            HStack{
+                                Text("Select Date")
+                                Spacer()
+                                Button("\(date.formatted(date: .abbreviated, time: .omitted))") {
+                                    showDatePicker.toggle()
+                                    
+                                }
+                                .accentColor(.purplee)
+                                
+                            }
+                            
+                            
+                            if showDatePicker {
+                                DatePicker("Date", selection: $date, displayedComponents: .date)
+                                    .datePickerStyle(.graphical)
+                                    .accentColor(.purplee)
+                            }
                             
                         }
-
+                        
                     }
-                    .listStyle(PlainListStyle())
-                    .background(Color.f3)
+//                    .listStyle(PlainListStyle())
+                    .listStyle(.automatic)
+//                    .background(Color.f3)
                     
-                    NavigationLink(destination: ContentView()) {
+                    
+//                    NavigationLink(destination: ContentView()) {
                         
                         Button("Done"){
-                            
                         }
                         .padding()
-                        .frame(width: 339 , height: 60)
+                        .frame(width: 340 , height: 60)
                         .background(Color.purplee)
-                        .cornerRadius(20)
+                        .cornerRadius(10)
                         .foregroundColor(.white)
                         .font(.custom("SF Pro", size: 20))
-                    }
+//                    }
                 }
+
             }
-
-                
-
+            
+            
+            
         }
-        .navigationTitle("Send Details")
+        .navigationTitle("Preview")
         
     }
 }
