@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AD5B49D2B6690F200BD2743 /* Birthdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5B49C2B6690F200BD2743 /* Birthdays.swift */; };
+		2AD5B4A02B66912D00BD2743 /* CardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5B49F2B66912D00BD2743 /* CardInputView.swift */; };
+		2AD5B4A22B66918A00BD2743 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5B4A12B66918A00BD2743 /* QRCodeView.swift */; };
+		2AD5B4A42B669CEC00BD2743 /* Graduation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5B4A32B669CEC00BD2743 /* Graduation.swift */; };
 		A52CEB252B57FD06008866CA /* AbarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CEB242B57FD06008866CA /* AbarApp.swift */; };
-		A52CEB272B57FD06008866CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CEB262B57FD06008866CA /* ContentView.swift */; };
 		A52CEB292B57FD07008866CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52CEB282B57FD07008866CA /* Assets.xcassets */; };
 		A52CEB2C2B57FD07008866CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AD5B49C2B6690F200BD2743 /* Birthdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthdays.swift; sourceTree = "<group>"; };
+		2AD5B49F2B66912D00BD2743 /* CardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInputView.swift; sourceTree = "<group>"; };
+		2AD5B4A12B66918A00BD2743 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		2AD5B4A32B669CEC00BD2743 /* Graduation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graduation.swift; sourceTree = "<group>"; };
 		A52CEB212B57FD06008866CA /* Abar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52CEB242B57FD06008866CA /* AbarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbarApp.swift; sourceTree = "<group>"; };
-		A52CEB262B57FD06008866CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A52CEB282B57FD07008866CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +38,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AD5B49B2B6690CB00BD2743 /* Occasions */ = {
+			isa = PBXGroup;
+			children = (
+				2AD5B49C2B6690F200BD2743 /* Birthdays.swift */,
+				2AD5B4A32B669CEC00BD2743 /* Graduation.swift */,
+			);
+			path = Occasions;
+			sourceTree = "<group>";
+		};
 		A52CEB182B57FD06008866CA = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				A52CEB242B57FD06008866CA /* AbarApp.swift */,
-				A52CEB262B57FD06008866CA /* ContentView.swift */,
+				2AD5B49F2B66912D00BD2743 /* CardInputView.swift */,
+				2AD5B4A12B66918A00BD2743 /* QRCodeView.swift */,
 				A52CEB282B57FD07008866CA /* Assets.xcassets */,
+				2AD5B49B2B6690CB00BD2743 /* Occasions */,
 				A52CEB2A2B57FD07008866CA /* Preview Content */,
 			);
 			path = Abar;
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A52CEB272B57FD06008866CA /* ContentView.swift in Sources */,
+				2AD5B4A42B669CEC00BD2743 /* Graduation.swift in Sources */,
 				A52CEB252B57FD06008866CA /* AbarApp.swift in Sources */,
+				2AD5B4A22B66918A00BD2743 /* QRCodeView.swift in Sources */,
+				2AD5B49D2B6690F200BD2743 /* Birthdays.swift in Sources */,
+				2AD5B4A02B66912D00BD2743 /* CardInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
