@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		A52CEB252B57FD06008866CA /* AbarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CEB242B57FD06008866CA /* AbarApp.swift */; };
-		A52CEB272B57FD06008866CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CEB262B57FD06008866CA /* ContentView.swift */; };
 		A52CEB292B57FD07008866CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52CEB282B57FD07008866CA /* Assets.xcassets */; };
 		A52CEB2C2B57FD07008866CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */; };
+		A572CAC52B6A854A00ED018E /* Birthdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAC42B6A854A00ED018E /* Birthdays.swift */; };
+		A572CACD2B6A863C00ED018E /* CardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CACC2B6A863C00ED018E /* CardInputView.swift */; };
+		A572CACF2B6A866500ED018E /* Graduation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CACE2B6A866500ED018E /* Graduation.swift */; };
+		A572CAD12B6A86A700ED018E /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD02B6A86A700ED018E /* QRCodeView.swift */; };
+		A572CAD32B6A872300ED018E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD22B6A872300ED018E /* ContentView.swift */; };
+		A572CAD52B6A874A00ED018E /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD42B6A874A00ED018E /* SplashPage.swift */; };
+		A572CAD92B6A879D00ED018E /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD82B6A879D00ED018E /* GifImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A52CEB212B57FD06008866CA /* Abar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52CEB242B57FD06008866CA /* AbarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbarApp.swift; sourceTree = "<group>"; };
-		A52CEB262B57FD06008866CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A52CEB282B57FD07008866CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A572CAB02B6A753400ED018E /* SplashPage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SplashPage.gif; sourceTree = "<group>"; };
+		A572CAC42B6A854A00ED018E /* Birthdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthdays.swift; sourceTree = "<group>"; };
+		A572CACC2B6A863C00ED018E /* CardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInputView.swift; sourceTree = "<group>"; };
+		A572CACE2B6A866500ED018E /* Graduation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graduation.swift; sourceTree = "<group>"; };
+		A572CAD02B6A86A700ED018E /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		A572CAD22B6A872300ED018E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
+		A572CAD42B6A874A00ED018E /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
+		A572CAD82B6A879D00ED018E /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GifImage.swift; path = ../GifImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +65,14 @@
 			isa = PBXGroup;
 			children = (
 				A52CEB242B57FD06008866CA /* AbarApp.swift */,
-				A52CEB262B57FD06008866CA /* ContentView.swift */,
+				A572CAD22B6A872300ED018E /* ContentView.swift */,
+				A572CAD42B6A874A00ED018E /* SplashPage.swift */,
+				A572CACC2B6A863C00ED018E /* CardInputView.swift */,
+				A572CACE2B6A866500ED018E /* Graduation.swift */,
+				A572CAD02B6A86A700ED018E /* QRCodeView.swift */,
+				A572CAC42B6A854A00ED018E /* Birthdays.swift */,
+				A572CAD82B6A879D00ED018E /* GifImage.swift */,
+				A572CAB02B6A753400ED018E /* SplashPage.gif */,
 				A52CEB282B57FD07008866CA /* Assets.xcassets */,
 				A52CEB2A2B57FD07008866CA /* Preview Content */,
 			);
@@ -137,8 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A52CEB272B57FD06008866CA /* ContentView.swift in Sources */,
+				A572CACF2B6A866500ED018E /* Graduation.swift in Sources */,
 				A52CEB252B57FD06008866CA /* AbarApp.swift in Sources */,
+				A572CAD92B6A879D00ED018E /* GifImage.swift in Sources */,
+				A572CAD32B6A872300ED018E /* ContentView.swift in Sources */,
+				A572CAD52B6A874A00ED018E /* SplashPage.swift in Sources */,
+				A572CACD2B6A863C00ED018E /* CardInputView.swift in Sources */,
+				A572CAD12B6A86A700ED018E /* QRCodeView.swift in Sources */,
+				A572CAC52B6A854A00ED018E /* Birthdays.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
