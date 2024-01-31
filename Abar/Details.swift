@@ -11,7 +11,6 @@ struct Details: View {
     
     @State var recieverName: String = ""
     @State var recieverNumber: String = ""
-    
     @State var date: Date = Date()
     @State var showDatePicker = false
     
@@ -22,56 +21,58 @@ struct Details: View {
             ZStack {
                 Color(.f2)
                     .ignoresSafeArea()
+                
                 VStack{
+                    
+                    List{
 
                     //Card Preview
                     Rectangle()
-                        .frame(width: 300, height: 360)
+                        .frame(width: 304, height: 357)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .shadow(color: Color(red: 0.5, green: 0.5, blue: 0.5).opacity(0.25), radius: 10, x: 10, y: 10)
                         .padding()
-                    
-                    
-                    List{
-                        Section(header: CustomText("Details")){
-                            TextField("Name", text: $recieverName)
-                                .background(.white)
-                                .cornerRadius(10)
-                                .foregroundColor(.black)
-                                .padding(.horizontal)
-                            
-                            TextField("Number", text: $recieverNumber)
-                                .background(.white)
-                                .cornerRadius(10)
-                                .foregroundColor(.black)
-                                .padding(.horizontal)
-                        }
+                        .listRowBackground(hidden())
+                          
+//                        Section(header: CustomText("Details")){
+//                            TextField("Name", text: $recieverName)
+//                                .background(.white)
+//                                .cornerRadius(10)
+//                                .foregroundColor(.black)
+//                                .padding(.horizontal)
+//                            
+//                            TextField("Number", text: $recieverNumber)
+//                                .background(.white)
+//                                .cornerRadius(10)
+//                                .foregroundColor(.black)
+//                                .padding(.horizontal)
+//                        }
                         
-                        Section(header: CustomText("Schedule Time")){
-                            
-                            HStack{
-                                Text("Select Date")
-                                Spacer()
-                                Button("\(date.formatted(date: .abbreviated, time: .omitted))") {
-                                    showDatePicker.toggle()
-                                    
-                                }
-                                .accentColor(.purplee)
-                                
-                            }
-                            
-                            
-                            if showDatePicker {
-                                DatePicker("Date", selection: $date, displayedComponents: .date)
-                                    .datePickerStyle(.graphical)
-                                    .accentColor(.purplee)
-                            }
-                            
-                        }
+//                        Section(header: CustomText("Schedule Time")){
+//                            
+//                            HStack{
+//                                Text("Select Date")
+//                                Spacer()
+//                                Button("\(date.formatted(date: .abbreviated, time: .omitted))") {
+//                                    showDatePicker.toggle()
+//                                    
+//                                }
+//                                .accentColor(.purplee)
+//                                
+//                            }
+//                            
+//                            
+//                            if showDatePicker {
+//                                DatePicker("Date", selection: $date, displayedComponents: .date)
+//                                    .datePickerStyle(.graphical)
+//                                    .accentColor(.purplee)
+//                            }
+//                            
+//                        }
                         
                     }
-//                    .listStyle(PlainListStyle())
+//                    .listStyle(.inset)
                     .listStyle(.automatic)
 //                    .background(Color.f3)
                     
