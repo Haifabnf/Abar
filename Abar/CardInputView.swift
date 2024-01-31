@@ -1,8 +1,8 @@
 //
-//  CardIContentView.swift
-//  Abar
+//  CardInputView.swift
+//  AbarEx
 //
-//  Created by Noura. on 12/07/1445 AH.
+//  Created by Noura. on 19/07/1445 AH.
 //
 
 import SwiftUI
@@ -22,6 +22,7 @@ struct CardInputView: View {
     @State private var showLinkInput: Bool = false
     @State private var showQRCode = false
     @State private var selectedToolbarItem: String?
+    @State private var navigateToFinalCardView = false
     private let characterLimit = 200
 
     var body: some View {
@@ -34,7 +35,7 @@ struct CardInputView: View {
             .padding()
             .navigationBarItems(leading: cancelButton, trailing: saveButton)
             .toolbar { toolbarContent }
-            .background(navigationLinkToQRCodeView)
+            .background(navigationLinkToFinalCardView)
         }.padding()
     }
     
@@ -86,17 +87,14 @@ struct CardInputView: View {
     }
 
     private var saveButton: some View {
-        Button("Save") {
-            if let selectedCard = selectedCard {
-                let cardInfo = CardInfo(cardIndex: selectedCard, userText: userInput, link: linkInput.isEmpty ? nil : linkInput)
-                cardInfos.append(cardInfo)
-                if !linkInput.isEmpty {
-                    showQRCode = true
-                }
-               // presentationMode.wrappedValue.dismiss()
-            }
-        }
-    }
+           Button("Save") {
+               if let selectedCard = selectedCard {
+                   let cardInfo = CardInfo(cardIndex: selectedCard, userText: userInput, link: linkInput.isEmpty ? nil : linkInput)
+                   cardInfos.append(cardInfo)
+                   navigateToFinalCardView = true
+               }
+           }
+       }
 
     private var toolbarContent: some ToolbarContent {
         ToolbarItemGroup(placement: .bottomBar) {
@@ -108,6 +106,16 @@ struct CardInputView: View {
             CustomToolbarButton(label: "Link", systemImage: showLinkInput ? "checkmark" : "link", isSelected: selectedToolbarItem == "Link") {
                 showLinkInput.toggle()
                 selectedToolbarItem = showLinkInput ? "Link" : nil
+            }
+        }
+    }
+    
+    private var navigationLinkToFinalCardView: some View {
+        Group {
+            if navigateToFinalCardView, let selectedCard = selectedCard {
+                NavigationLink(destination: FinalCardView(cardIndex: selectedCard, userInput: userInput, link: linkInput), isActive: $navigateToFinalCardView) {
+                    EmptyView()
+                }
             }
         }
     }

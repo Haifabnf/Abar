@@ -1,8 +1,8 @@
 //
-//  Graduation.swift
-//  Abar
+//  Birthdays.swift
+//  AbarEx
 //
-//  Created by Noura. on 16/07/1445 AH.
+//  Created by Noura. on 19/07/1445 AH.
 //
 
 import SwiftUI
@@ -40,7 +40,7 @@ struct Graduation: View {
                     showingSheet = newValue != nil
                 }
             }
-            .navigationBarTitle("Birthdays", displayMode: .large)
+            .navigationBarTitle("Graduation", displayMode: .large)
             
         }
     }
@@ -60,8 +60,7 @@ struct Graduation: View {
                     .cornerRadius(10)
                     .clipped()
                     .shadow(color: Color(red: 0.5, green: 0.5, blue: 0.5).opacity(0.25), radius: 20, x: 10, y: 10)
-
-                // Overlay for highlighting the selected card.
+                
                 Rectangle()
                     .fill(Color.clear)
                     .frame(width: 304, height: 357)

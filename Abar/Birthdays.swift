@@ -18,6 +18,7 @@ struct Birthdays: View {
             NavigationView {
                 ScrollView {
                     VStack(spacing: 20) {
+                        
                         // Dynamic creation of card selection views.
                         BirthdaysCards(id: 0, selectedCard: $selectedCard)
                         BirthdaysCards(id: 1, selectedCard: $selectedCard)

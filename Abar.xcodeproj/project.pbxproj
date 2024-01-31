@@ -18,6 +18,7 @@
 		A572CAD52B6A874A00ED018E /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD42B6A874A00ED018E /* SplashPage.swift */; };
 		A572CAD92B6A879D00ED018E /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD82B6A879D00ED018E /* GifImage.swift */; };
 		A572CADD2B6A885600ED018E /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CADC2B6A885600ED018E /* Preview.swift */; };
+		A572CADF2B6B012900ED018E /* FinalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CADE2B6B012900ED018E /* FinalCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A572CAD42B6A874A00ED018E /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
 		A572CAD82B6A879D00ED018E /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GifImage.swift; path = ../GifImage.swift; sourceTree = "<group>"; };
 		A572CADC2B6A885600ED018E /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		A572CADE2B6B012900ED018E /* FinalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +52,6 @@
 		A52CEB182B57FD06008866CA = {
 			isa = PBXGroup;
 			children = (
-				A572CADC2B6A885600ED018E /* Preview.swift */,
 				A52CEB232B57FD06008866CA /* Abar */,
 				A52CEB222B57FD06008866CA /* Products */,
 			);
@@ -70,10 +71,12 @@
 				A52CEB242B57FD06008866CA /* AbarApp.swift */,
 				A572CAD22B6A872300ED018E /* ContentView.swift */,
 				A572CAD42B6A874A00ED018E /* SplashPage.swift */,
+				A572CADE2B6B012900ED018E /* FinalCardView.swift */,
 				A572CACC2B6A863C00ED018E /* CardInputView.swift */,
+				A572CAC42B6A854A00ED018E /* Birthdays.swift */,
 				A572CACE2B6A866500ED018E /* Graduation.swift */,
 				A572CAD02B6A86A700ED018E /* QRCodeView.swift */,
-				A572CAC42B6A854A00ED018E /* Birthdays.swift */,
+				A572CADC2B6A885600ED018E /* Preview.swift */,
 				A572CAD82B6A879D00ED018E /* GifImage.swift */,
 				A572CAB02B6A753400ED018E /* SplashPage.gif */,
 				A52CEB282B57FD07008866CA /* Assets.xcassets */,
@@ -167,6 +170,7 @@
 				A572CAD52B6A874A00ED018E /* SplashPage.swift in Sources */,
 				A572CACD2B6A863C00ED018E /* CardInputView.swift in Sources */,
 				A572CAD12B6A86A700ED018E /* QRCodeView.swift in Sources */,
+				A572CADF2B6B012900ED018E /* FinalCardView.swift in Sources */,
 				A572CADD2B6A885600ED018E /* Preview.swift in Sources */,
 				A572CAC52B6A854A00ED018E /* Birthdays.swift in Sources */,
 			);
