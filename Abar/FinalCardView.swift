@@ -12,7 +12,7 @@ struct FinalCardView: View {
     let cardIndex: Int
     let userInput: String
     let link: String?
-
+    
     var body: some View {
         ZStack {
             // Display the selected card
@@ -25,29 +25,26 @@ struct FinalCardView: View {
                 .shadow(color: Color(red: 0.5, green: 0.5, blue: 0.5).opacity(0.25), radius: 20, x: 10, y: 10)
                 .overlay{
                     
-                    VStack{
-
+                    VStack(spacing: 50){
                         // Display the user input text
+                        Spacer()
+
                         Text(userInput)
                             .padding()
                             .frame(width: 304, alignment: .leading)
-//                        Spacer()
-                    }
-                    .padding()
-                    
-                    VStack{
-                        Spacer()
-                        HStack{
+                        
                             // If a link is provided, display the QR code
                             if let link = link, !link.isEmpty {
-                                QRCodeView(url: link)
-                                    .frame(width: 200, height: 200)
+                                HStack{
+                                    
+                                    QRCodeView(url: link)
+                                        .frame(width: 200, height: 200, alignment: .bottomLeading)
+                                    Spacer()
+                                }
                             }
-                            Spacer()
-                        }
+                            
+                        
                     }
-                    .padding(.top, 200)
-                    
                 }
             
         }
