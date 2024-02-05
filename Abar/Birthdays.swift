@@ -25,12 +25,10 @@ struct Birthdays: View {
                         BirthdaysCards(id: 2, selectedCard: $selectedCard)
                         // Add more cards as needed.
 
-                        // Displays entered text for each selected card.
-                        ForEach(cardInfos, id: \.cardIndex) { cardInfo in
-                            Text("Card \(cardInfo.cardIndex): \(cardInfo.userText)")
-                        }
+                       
                     }
                     .padding(.vertical, 20)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 }
                 .sheet(isPresented: $showingSheet) {
                     // Presents the input view when a card is selected.

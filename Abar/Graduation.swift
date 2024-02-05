@@ -10,6 +10,7 @@ import SwiftUI
 
 // Main view for displaying a selection of cards.
 struct Graduation: View {
+    
         @State private var selectedCard: Int? = nil // ID of the selected card.
         @State private var showingSheet = false // Controls whether the input sheet is shown.
         @State private var cardInfos: [CardInfo] = [] // Stores user-entered text for each card.
@@ -23,13 +24,9 @@ struct Graduation: View {
                         GraduationCards(id: 1, selectedCard: $selectedCard)
                         GraduationCards(id: 2, selectedCard: $selectedCard)
                         // Add more cards as needed.
-
-                        // Displays entered text for each selected card.
-                        ForEach(cardInfos, id: \.cardIndex) { cardInfo in
-                            Text("Card \(cardInfo.cardIndex): \(cardInfo.userText)")
-                        }
                     }
                     .padding(.vertical, 20)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 }
                 .sheet(isPresented: $showingSheet) {
                     // Presents the input view when a card is selected.
@@ -48,9 +45,11 @@ struct Graduation: View {
     // View representing each card selection option.
     struct GraduationCards: View {
         let id: Int
+        
         @Binding var selectedCard: Int?
 
         var body: some View {
+            
             ZStack {
                 // Image representing the card.
                 Image("Graduation \(id + 1)")

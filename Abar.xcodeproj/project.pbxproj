@@ -10,15 +10,22 @@
 		A52CEB252B57FD06008866CA /* AbarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CEB242B57FD06008866CA /* AbarApp.swift */; };
 		A52CEB292B57FD07008866CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52CEB282B57FD07008866CA /* Assets.xcassets */; };
 		A52CEB2C2B57FD07008866CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */; };
-		A572CAC52B6A854A00ED018E /* Birthdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAC42B6A854A00ED018E /* Birthdays.swift */; };
+		A53A5F812B70D9A10051FE16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5F802B70D9A10051FE16 /* ContentView.swift */; };
 		A572CACD2B6A863C00ED018E /* CardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CACC2B6A863C00ED018E /* CardInputView.swift */; };
-		A572CACF2B6A866500ED018E /* Graduation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CACE2B6A866500ED018E /* Graduation.swift */; };
 		A572CAD12B6A86A700ED018E /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD02B6A86A700ED018E /* QRCodeView.swift */; };
-		A572CAD32B6A872300ED018E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD22B6A872300ED018E /* ContentView.swift */; };
 		A572CAD52B6A874A00ED018E /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD42B6A874A00ED018E /* SplashPage.swift */; };
 		A572CAD92B6A879D00ED018E /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD82B6A879D00ED018E /* GifImage.swift */; };
 		A572CADD2B6A885600ED018E /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CADC2B6A885600ED018E /* Preview.swift */; };
 		A572CADF2B6B012900ED018E /* FinalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CADE2B6B012900ED018E /* FinalCardView.swift */; };
+		A5DEA5BA2B70DAFE000C80E2 /* MemesCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5B92B70DAFE000C80E2 /* MemesCards.swift */; };
+		A5DEA5BC2B70DB34000C80E2 /* BirthdaysCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5BB2B70DB34000C80E2 /* BirthdaysCards.swift */; };
+		A5DEA5BE2B70DB97000C80E2 /* GenericCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5BD2B70DB97000C80E2 /* GenericCards.swift */; };
+		A5DEA5C02B70DBB7000C80E2 /* GratitudeCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5BF2B70DBB7000C80E2 /* GratitudeCards.swift */; };
+		A5DEA5C22B70DBF0000C80E2 /* GraduationCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5C12B70DBF0000C80E2 /* GraduationCards.swift */; };
+		A5DEA5C42B70DC1F000C80E2 /* ArtistCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5C32B70DC1F000C80E2 /* ArtistCards.swift */; };
+		A5DEA5C62B70DC39000C80E2 /* NewJobCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5C52B70DC39000C80E2 /* NewJobCards.swift */; };
+		A5DEA5C92B70DC92000C80E2 /* FoundationDayCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5C82B70DC92000C80E2 /* FoundationDayCards.swift */; };
+		A5DEA5CB2B70DCAE000C80E2 /* LeapEventCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5CA2B70DCAE000C80E2 /* LeapEventCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,16 +33,23 @@
 		A52CEB242B57FD06008866CA /* AbarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbarApp.swift; sourceTree = "<group>"; };
 		A52CEB282B57FD07008866CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A53A5F802B70D9A10051FE16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "New Group/ContentView.swift"; sourceTree = "<group>"; };
 		A572CAB02B6A753400ED018E /* SplashPage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SplashPage.gif; sourceTree = "<group>"; };
-		A572CAC42B6A854A00ED018E /* Birthdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthdays.swift; sourceTree = "<group>"; };
 		A572CACC2B6A863C00ED018E /* CardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInputView.swift; sourceTree = "<group>"; };
-		A572CACE2B6A866500ED018E /* Graduation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graduation.swift; sourceTree = "<group>"; };
 		A572CAD02B6A86A700ED018E /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
-		A572CAD22B6A872300ED018E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
 		A572CAD42B6A874A00ED018E /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
 		A572CAD82B6A879D00ED018E /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GifImage.swift; path = ../GifImage.swift; sourceTree = "<group>"; };
 		A572CADC2B6A885600ED018E /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		A572CADE2B6B012900ED018E /* FinalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCardView.swift; sourceTree = "<group>"; };
+		A5DEA5B92B70DAFE000C80E2 /* MemesCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemesCards.swift; sourceTree = "<group>"; };
+		A5DEA5BB2B70DB34000C80E2 /* BirthdaysCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysCards.swift; sourceTree = "<group>"; };
+		A5DEA5BD2B70DB97000C80E2 /* GenericCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCards.swift; sourceTree = "<group>"; };
+		A5DEA5BF2B70DBB7000C80E2 /* GratitudeCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeCards.swift; sourceTree = "<group>"; };
+		A5DEA5C12B70DBF0000C80E2 /* GraduationCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraduationCards.swift; sourceTree = "<group>"; };
+		A5DEA5C32B70DC1F000C80E2 /* ArtistCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCards.swift; sourceTree = "<group>"; };
+		A5DEA5C52B70DC39000C80E2 /* NewJobCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJobCards.swift; sourceTree = "<group>"; };
+		A5DEA5C82B70DC92000C80E2 /* FoundationDayCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationDayCards.swift; sourceTree = "<group>"; };
+		A5DEA5CA2B70DCAE000C80E2 /* LeapEventCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapEventCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				A52CEB242B57FD06008866CA /* AbarApp.swift */,
-				A572CAD22B6A872300ED018E /* ContentView.swift */,
 				A572CAD42B6A874A00ED018E /* SplashPage.swift */,
-				A572CADE2B6B012900ED018E /* FinalCardView.swift */,
-				A572CACC2B6A863C00ED018E /* CardInputView.swift */,
-				A572CAC42B6A854A00ED018E /* Birthdays.swift */,
-				A572CACE2B6A866500ED018E /* Graduation.swift */,
-				A572CAD02B6A86A700ED018E /* QRCodeView.swift */,
+				A53A5F802B70D9A10051FE16 /* ContentView.swift */,
+				A5DEA5B82B70DAA8000C80E2 /* New Group */,
 				A572CADC2B6A885600ED018E /* Preview.swift */,
+				A572CADE2B6B012900ED018E /* FinalCardView.swift */,
+				A572CAD02B6A86A700ED018E /* QRCodeView.swift */,
 				A572CAD82B6A879D00ED018E /* GifImage.swift */,
 				A572CAB02B6A753400ED018E /* SplashPage.gif */,
 				A52CEB282B57FD07008866CA /* Assets.xcassets */,
@@ -91,6 +103,31 @@
 				A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5DEA5B82B70DAA8000C80E2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A572CACC2B6A863C00ED018E /* CardInputView.swift */,
+				A5DEA5C72B70DC63000C80E2 /* Special Occasions */,
+				A5DEA5BB2B70DB34000C80E2 /* BirthdaysCards.swift */,
+				A5DEA5BD2B70DB97000C80E2 /* GenericCards.swift */,
+				A5DEA5BF2B70DBB7000C80E2 /* GratitudeCards.swift */,
+				A5DEA5B92B70DAFE000C80E2 /* MemesCards.swift */,
+				A5DEA5C12B70DBF0000C80E2 /* GraduationCards.swift */,
+				A5DEA5C32B70DC1F000C80E2 /* ArtistCards.swift */,
+				A5DEA5C52B70DC39000C80E2 /* NewJobCards.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A5DEA5C72B70DC63000C80E2 /* Special Occasions */ = {
+			isa = PBXGroup;
+			children = (
+				A5DEA5C82B70DC92000C80E2 /* FoundationDayCards.swift */,
+				A5DEA5CA2B70DCAE000C80E2 /* LeapEventCards.swift */,
+			);
+			path = "Special Occasions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,16 +200,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A572CACF2B6A866500ED018E /* Graduation.swift in Sources */,
+				A5DEA5C42B70DC1F000C80E2 /* ArtistCards.swift in Sources */,
 				A52CEB252B57FD06008866CA /* AbarApp.swift in Sources */,
+				A53A5F812B70D9A10051FE16 /* ContentView.swift in Sources */,
+				A5DEA5C62B70DC39000C80E2 /* NewJobCards.swift in Sources */,
+				A5DEA5BC2B70DB34000C80E2 /* BirthdaysCards.swift in Sources */,
 				A572CAD92B6A879D00ED018E /* GifImage.swift in Sources */,
-				A572CAD32B6A872300ED018E /* ContentView.swift in Sources */,
 				A572CAD52B6A874A00ED018E /* SplashPage.swift in Sources */,
 				A572CACD2B6A863C00ED018E /* CardInputView.swift in Sources */,
+				A5DEA5C22B70DBF0000C80E2 /* GraduationCards.swift in Sources */,
 				A572CAD12B6A86A700ED018E /* QRCodeView.swift in Sources */,
+				A5DEA5C92B70DC92000C80E2 /* FoundationDayCards.swift in Sources */,
+				A5DEA5BE2B70DB97000C80E2 /* GenericCards.swift in Sources */,
+				A5DEA5C02B70DBB7000C80E2 /* GratitudeCards.swift in Sources */,
 				A572CADF2B6B012900ED018E /* FinalCardView.swift in Sources */,
 				A572CADD2B6A885600ED018E /* Preview.swift in Sources */,
-				A572CAC52B6A854A00ED018E /* Birthdays.swift in Sources */,
+				A5DEA5CB2B70DCAE000C80E2 /* LeapEventCards.swift in Sources */,
+				A5DEA5BA2B70DAFE000C80E2 /* MemesCards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
