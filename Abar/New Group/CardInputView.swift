@@ -1,17 +1,12 @@
 //
-//  CardInputView.swift
-//  AbarEx
+//  CardIContentView.swift
+//  Abar
 //
-//  Created by Noura. on 19/07/1445 AH.
+//  Created by Noura. on 12/07/1445 AH.
 //
 
 import SwiftUI
 
-struct CardInfo {
-    let cardIndex: Int
-    var userText: String
-    var link: String?
-}
 
 struct CardInputView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -22,22 +17,33 @@ struct CardInputView: View {
     @State private var showLinkInput: Bool = false
     @State private var showQRCode = false
     @State private var selectedToolbarItem: String?
-    @State private var navigateToFinalCardView = false
-    private let characterLimit = 200
+    @State private var navigateToFinalCard = false
+    let category: String // Add this line
 
+    
+    private let characterLimit = 200
+    
     var body: some View {
         NavigationView {
             VStack {
                 userInputTextEditor
                 characterCountText
                 linkInputFieldIfNeeded
-            }
-            .padding()
-            .navigationBarItems(leading: cancelButton, trailing: saveButton)
-            .toolbar { toolbarContent }
-            .background(navigationLinkToFinalCardView)
+                // Hidden NavigationLink that triggers navigation when navigateToFinalCard is true
+                NavigationLink(destination: PreviewView(
+                    category: category, cardIndex: selectedCard ?? 0,
+                            userInput: userInput,
+                            link: linkInput
+                        ), isActive: $navigateToFinalCard) {
+                            EmptyView() // Invisible NavigationLink
+                        }
+                    }
+                    .navigationBarItems(leading: cancelButton, trailing: saveButton)
+                    .toolbar { toolbarContent }
+            .background(navigationLinkToQRCodeView)
         }.padding()
     }
+
     
     private var navigationLinkToQRCodeView: some View {
         Group {
@@ -87,14 +93,19 @@ struct CardInputView: View {
     }
 
     private var saveButton: some View {
-           Button("Save") {
-               if let selectedCard = selectedCard {
-                   let cardInfo = CardInfo(cardIndex: selectedCard, userText: userInput, link: linkInput.isEmpty ? nil : linkInput)
-                   cardInfos.append(cardInfo)
-                   navigateToFinalCardView = true
-               }
-           }
-       }
+        Button("Save") {
+            if let selectedCardIndex = selectedCard {
+                // Assuming cardInfos is intended to store the input for each card
+                let newCardInfo = CardInfo(cardIndex: selectedCardIndex, userText: userInput, link: linkInput)
+                if let index = cardInfos.firstIndex(where: { $0.cardIndex == selectedCardIndex }) {
+                    cardInfos[index] = newCardInfo
+                } else {
+                    cardInfos.append(newCardInfo)
+                }
+                navigateToFinalCard = true // Set to true to trigger navigation
+            }
+        }
+    }
 
     private var toolbarContent: some ToolbarContent {
         ToolbarItemGroup(placement: .bottomBar) {
@@ -106,16 +117,6 @@ struct CardInputView: View {
             CustomToolbarButton(label: "Link", systemImage: showLinkInput ? "checkmark" : "link", isSelected: selectedToolbarItem == "Link") {
                 showLinkInput.toggle()
                 selectedToolbarItem = showLinkInput ? "Link" : nil
-            }
-        }
-    }
-    
-    private var navigationLinkToFinalCardView: some View {
-        Group {
-            if navigateToFinalCardView, let selectedCard = selectedCard {
-                NavigationLink(destination: FinalCardView(cardIndex: selectedCard, userInput: userInput, link: linkInput), isActive: $navigateToFinalCardView) {
-                    EmptyView()
-                }
             }
         }
     }
@@ -146,6 +147,9 @@ struct CardInputView: View {
 
 struct CardInputView_Previews: PreviewProvider {
     static var previews: some View {
-        CardInputView(selectedCard: .constant(nil), cardInfos: .constant([]))
+        // Use .constant to provide example values for the preview
+        CardInputView(selectedCard: .constant(1), cardInfos: .constant([CardInfo(cardIndex: 1, userText: "Happy Birthday!", link: "https://example.com")]), category: "Birthday")
     }
 }
+
+
