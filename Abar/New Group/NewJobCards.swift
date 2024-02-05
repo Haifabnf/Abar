@@ -25,6 +25,7 @@ let category = "New Job"
 
                 }
                 .padding(.vertical, 20)
+                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
             }
             .sheet(isPresented: $showingSheet) {
                 CardInputView(selectedCard: $selectedCard, cardInfos: $cardInfos, category: category)

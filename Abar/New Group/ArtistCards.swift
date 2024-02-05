@@ -24,6 +24,7 @@ let category = "Artists"
 
 
                 }
+                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 .padding(.vertical, 20)
             }
             .sheet(isPresented: $showingSheet) {

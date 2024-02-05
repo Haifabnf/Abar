@@ -10,7 +10,7 @@ struct SplashPage: View {
     @State private var opacity = 0.1
     private let topPadding: CGFloat = 230
     private let animationDuration: Double = 1
-    private let transitionDelay: Double = 1.28
+    private let transitionDelay: Double = 6
 
     var body: some View {
         if isActive {

@@ -62,8 +62,9 @@ struct ContentView: View {
 
                     }
                 }
-            }.padding()
-             .navigationBarTitle("Explore", displayMode: .large)
+            }
+            .padding()
+            .navigationBarTitle("Explore", displayMode: .large)
             .navigationBarBackButtonHidden(true) // Hide the back button
             .background(gradientBackground.edgesIgnoringSafeArea(.all))
         
