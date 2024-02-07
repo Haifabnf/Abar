@@ -7,16 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A52CEB252B57FD06008866CA /* AbarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CEB242B57FD06008866CA /* AbarApp.swift */; };
 		A52CEB292B57FD07008866CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52CEB282B57FD07008866CA /* Assets.xcassets */; };
 		A52CEB2C2B57FD07008866CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */; };
-		A53A5F812B70D9A10051FE16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5F802B70D9A10051FE16 /* ContentView.swift */; };
-		A572CACD2B6A863C00ED018E /* CardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CACC2B6A863C00ED018E /* CardInputView.swift */; };
-		A572CAD12B6A86A700ED018E /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD02B6A86A700ED018E /* QRCodeView.swift */; };
-		A572CAD52B6A874A00ED018E /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD42B6A874A00ED018E /* SplashPage.swift */; };
-		A572CAD92B6A879D00ED018E /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CAD82B6A879D00ED018E /* GifImage.swift */; };
-		A572CADD2B6A885600ED018E /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CADC2B6A885600ED018E /* Preview.swift */; };
-		A572CADF2B6B012900ED018E /* FinalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572CADE2B6B012900ED018E /* FinalCardView.swift */; };
+		A57DC8DC2B73C829004D3B2D /* AIview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8DB2B73C829004D3B2D /* AIview.swift */; };
+		A57DC8E42B73C86F004D3B2D /* CardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8DD2B73C86F004D3B2D /* CardInputView.swift */; };
+		A57DC8E52B73C86F004D3B2D /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8DE2B73C86F004D3B2D /* QRCodeView.swift */; };
+		A57DC8E62B73C86F004D3B2D /* FinalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8DF2B73C86F004D3B2D /* FinalCardView.swift */; };
+		A57DC8E72B73C86F004D3B2D /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8E02B73C86F004D3B2D /* OpenAIService.swift */; };
+		A57DC8E82B73C86F004D3B2D /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8E12B73C86F004D3B2D /* ChatViewModel.swift */; };
+		A57DC8E92B73C86F004D3B2D /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8E22B73C86F004D3B2D /* Preview.swift */; };
+		A57DC8EA2B73C86F004D3B2D /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8E32B73C86F004D3B2D /* SplashPage.swift */; };
+		A57DC8EC2B73C87E004D3B2D /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8EB2B73C87E004D3B2D /* SplashPage.swift */; };
+		A57DC8EE2B73C8A3004D3B2D /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8ED2B73C8A3004D3B2D /* OpenAIService.swift */; };
+		A57DC8F02B73C8AF004D3B2D /* FinalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8EF2B73C8AF004D3B2D /* FinalCardView.swift */; };
+		A57DC8F22B73C8BB004D3B2D /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8F12B73C8BB004D3B2D /* ChatViewModel.swift */; };
+		A57DC8F42B73C8C2004D3B2D /* CardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8F32B73C8C2004D3B2D /* CardInputView.swift */; };
+		A57DC8F62B73C8CE004D3B2D /* AbarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8F52B73C8CE004D3B2D /* AbarApp.swift */; };
+		A57DC8F92B73CC3E004D3B2D /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = A57DC8F82B73CC3E004D3B2D /* OpenAISwift */; };
+		A57DC8FB2B73CDDE004D3B2D /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8FA2B73CDDE004D3B2D /* GifImage.swift */; };
+		A57DC8FD2B73CE04004D3B2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8FC2B73CE04004D3B2D /* ContentView.swift */; };
 		A5DEA5BA2B70DAFE000C80E2 /* MemesCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5B92B70DAFE000C80E2 /* MemesCards.swift */; };
 		A5DEA5BC2B70DB34000C80E2 /* BirthdaysCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5BB2B70DB34000C80E2 /* BirthdaysCards.swift */; };
 		A5DEA5BE2B70DB97000C80E2 /* GenericCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5BD2B70DB97000C80E2 /* GenericCards.swift */; };
@@ -30,17 +39,25 @@
 
 /* Begin PBXFileReference section */
 		A52CEB212B57FD06008866CA /* Abar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A52CEB242B57FD06008866CA /* AbarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbarApp.swift; sourceTree = "<group>"; };
 		A52CEB282B57FD07008866CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A53A5F802B70D9A10051FE16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "New Group/ContentView.swift"; sourceTree = "<group>"; };
 		A572CAB02B6A753400ED018E /* SplashPage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SplashPage.gif; sourceTree = "<group>"; };
-		A572CACC2B6A863C00ED018E /* CardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInputView.swift; sourceTree = "<group>"; };
-		A572CAD02B6A86A700ED018E /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
-		A572CAD42B6A874A00ED018E /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
-		A572CAD82B6A879D00ED018E /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GifImage.swift; path = ../GifImage.swift; sourceTree = "<group>"; };
-		A572CADC2B6A885600ED018E /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
-		A572CADE2B6B012900ED018E /* FinalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCardView.swift; sourceTree = "<group>"; };
+		A57DC8DB2B73C829004D3B2D /* AIview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AIview.swift; path = "../../../Downloads/AbarFINAL/Abar 3/AIview.swift"; sourceTree = "<group>"; };
+		A57DC8DD2B73C86F004D3B2D /* CardInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardInputView.swift; path = "../../../../Downloads/AbarFINAL/Abar 3/CardInputView.swift"; sourceTree = "<group>"; };
+		A57DC8DE2B73C86F004D3B2D /* QRCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeView.swift; path = "../../../../Downloads/AbarFINAL/Abar 3/QRCodeView.swift"; sourceTree = "<group>"; };
+		A57DC8DF2B73C86F004D3B2D /* FinalCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FinalCardView.swift; path = "../../../../Downloads/AbarFINAL/Abar 3/FinalCardView.swift"; sourceTree = "<group>"; };
+		A57DC8E02B73C86F004D3B2D /* OpenAIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenAIService.swift; path = "../../../../Downloads/AbarFINAL/Abar 3/OpenAIService.swift"; sourceTree = "<group>"; };
+		A57DC8E12B73C86F004D3B2D /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewModel.swift; path = "../../../../Downloads/AbarFINAL/Abar 3/ChatViewModel.swift"; sourceTree = "<group>"; };
+		A57DC8E22B73C86F004D3B2D /* Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preview.swift; path = "../../../../Downloads/AbarFINAL/Abar 3/Preview.swift"; sourceTree = "<group>"; };
+		A57DC8E32B73C86F004D3B2D /* SplashPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashPage.swift; path = "../../../../Downloads/AbarFINAL/Abar 3/SplashPage.swift"; sourceTree = "<group>"; };
+		A57DC8EB2B73C87E004D3B2D /* SplashPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashPage.swift; path = "../../../Downloads/AbarFINAL/Abar 3/SplashPage.swift"; sourceTree = "<group>"; };
+		A57DC8ED2B73C8A3004D3B2D /* OpenAIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenAIService.swift; path = "../../../Downloads/AbarFINAL/Abar 3/OpenAIService.swift"; sourceTree = "<group>"; };
+		A57DC8EF2B73C8AF004D3B2D /* FinalCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FinalCardView.swift; path = "../../../Downloads/AbarFINAL/Abar 3/FinalCardView.swift"; sourceTree = "<group>"; };
+		A57DC8F12B73C8BB004D3B2D /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewModel.swift; path = "../../../Downloads/AbarFINAL/Abar 3/ChatViewModel.swift"; sourceTree = "<group>"; };
+		A57DC8F32B73C8C2004D3B2D /* CardInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardInputView.swift; path = "../../../Downloads/AbarFINAL/Abar 3/CardInputView.swift"; sourceTree = "<group>"; };
+		A57DC8F52B73C8CE004D3B2D /* AbarApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbarApp.swift; path = "../../../Downloads/AbarFINAL/Abar 3/AbarApp.swift"; sourceTree = "<group>"; };
+		A57DC8FA2B73CDDE004D3B2D /* GifImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GifImage.swift; path = "../../../Downloads/Abar/Abar/Preview Content/GifImage.swift"; sourceTree = "<group>"; };
+		A57DC8FC2B73CE04004D3B2D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../Downloads/AbarFINAL/Abar 3/ContentView.swift"; sourceTree = "<group>"; };
 		A5DEA5B92B70DAFE000C80E2 /* MemesCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemesCards.swift; sourceTree = "<group>"; };
 		A5DEA5BB2B70DB34000C80E2 /* BirthdaysCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysCards.swift; sourceTree = "<group>"; };
 		A5DEA5BD2B70DB97000C80E2 /* GenericCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCards.swift; sourceTree = "<group>"; };
@@ -57,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57DC8F92B73CC3E004D3B2D /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,15 +100,16 @@
 		A52CEB232B57FD06008866CA /* Abar */ = {
 			isa = PBXGroup;
 			children = (
-				A52CEB242B57FD06008866CA /* AbarApp.swift */,
-				A572CAD42B6A874A00ED018E /* SplashPage.swift */,
-				A53A5F802B70D9A10051FE16 /* ContentView.swift */,
+				A57DC8F52B73C8CE004D3B2D /* AbarApp.swift */,
 				A5DEA5B82B70DAA8000C80E2 /* New Group */,
-				A572CACC2B6A863C00ED018E /* CardInputView.swift */,
-				A572CADC2B6A885600ED018E /* Preview.swift */,
-				A572CADE2B6B012900ED018E /* FinalCardView.swift */,
-				A572CAD02B6A86A700ED018E /* QRCodeView.swift */,
-				A572CAD82B6A879D00ED018E /* GifImage.swift */,
+				A57DC8EB2B73C87E004D3B2D /* SplashPage.swift */,
+				A57DC8FC2B73CE04004D3B2D /* ContentView.swift */,
+				A57DC8F12B73C8BB004D3B2D /* ChatViewModel.swift */,
+				A57DC8EF2B73C8AF004D3B2D /* FinalCardView.swift */,
+				A57DC8F32B73C8C2004D3B2D /* CardInputView.swift */,
+				A57DC8ED2B73C8A3004D3B2D /* OpenAIService.swift */,
+				A57DC8DB2B73C829004D3B2D /* AIview.swift */,
+				A57DC8FA2B73CDDE004D3B2D /* GifImage.swift */,
 				A572CAB02B6A753400ED018E /* SplashPage.gif */,
 				A52CEB282B57FD07008866CA /* Assets.xcassets */,
 				A52CEB2A2B57FD07008866CA /* Preview Content */,
@@ -101,6 +120,13 @@
 		A52CEB2A2B57FD07008866CA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				A57DC8DD2B73C86F004D3B2D /* CardInputView.swift */,
+				A57DC8E12B73C86F004D3B2D /* ChatViewModel.swift */,
+				A57DC8DF2B73C86F004D3B2D /* FinalCardView.swift */,
+				A57DC8E02B73C86F004D3B2D /* OpenAIService.swift */,
+				A57DC8E22B73C86F004D3B2D /* Preview.swift */,
+				A57DC8DE2B73C86F004D3B2D /* QRCodeView.swift */,
+				A57DC8E32B73C86F004D3B2D /* SplashPage.swift */,
 				A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -146,6 +172,9 @@
 			dependencies = (
 			);
 			name = Abar;
+			packageProductDependencies = (
+				A57DC8F82B73CC3E004D3B2D /* OpenAISwift */,
+			);
 			productName = Abar;
 			productReference = A52CEB212B57FD06008866CA /* Abar.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +203,9 @@
 				Base,
 			);
 			mainGroup = A52CEB182B57FD06008866CA;
+			packageReferences = (
+				A57DC8F72B73CC3E004D3B2D /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = A52CEB222B57FD06008866CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -200,23 +232,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57DC8E52B73C86F004D3B2D /* QRCodeView.swift in Sources */,
+				A57DC8FD2B73CE04004D3B2D /* ContentView.swift in Sources */,
+				A57DC8F22B73C8BB004D3B2D /* ChatViewModel.swift in Sources */,
+				A57DC8FB2B73CDDE004D3B2D /* GifImage.swift in Sources */,
 				A5DEA5C42B70DC1F000C80E2 /* ArtistCards.swift in Sources */,
-				A52CEB252B57FD06008866CA /* AbarApp.swift in Sources */,
-				A53A5F812B70D9A10051FE16 /* ContentView.swift in Sources */,
 				A5DEA5C62B70DC39000C80E2 /* NewJobCards.swift in Sources */,
+				A57DC8DC2B73C829004D3B2D /* AIview.swift in Sources */,
 				A5DEA5BC2B70DB34000C80E2 /* BirthdaysCards.swift in Sources */,
-				A572CAD92B6A879D00ED018E /* GifImage.swift in Sources */,
-				A572CAD52B6A874A00ED018E /* SplashPage.swift in Sources */,
-				A572CACD2B6A863C00ED018E /* CardInputView.swift in Sources */,
+				A57DC8EE2B73C8A3004D3B2D /* OpenAIService.swift in Sources */,
 				A5DEA5C22B70DBF0000C80E2 /* GraduationCards.swift in Sources */,
-				A572CAD12B6A86A700ED018E /* QRCodeView.swift in Sources */,
 				A5DEA5C92B70DC92000C80E2 /* FoundationDayCards.swift in Sources */,
+				A57DC8E72B73C86F004D3B2D /* OpenAIService.swift in Sources */,
+				A57DC8EA2B73C86F004D3B2D /* SplashPage.swift in Sources */,
 				A5DEA5BE2B70DB97000C80E2 /* GenericCards.swift in Sources */,
 				A5DEA5C02B70DBB7000C80E2 /* GratitudeCards.swift in Sources */,
-				A572CADF2B6B012900ED018E /* FinalCardView.swift in Sources */,
-				A572CADD2B6A885600ED018E /* Preview.swift in Sources */,
+				A57DC8E92B73C86F004D3B2D /* Preview.swift in Sources */,
+				A57DC8E42B73C86F004D3B2D /* CardInputView.swift in Sources */,
+				A57DC8EC2B73C87E004D3B2D /* SplashPage.swift in Sources */,
 				A5DEA5CB2B70DCAE000C80E2 /* LeapEventCards.swift in Sources */,
 				A5DEA5BA2B70DAFE000C80E2 /* MemesCards.swift in Sources */,
+				A57DC8F02B73C8AF004D3B2D /* FinalCardView.swift in Sources */,
+				A57DC8F42B73C8C2004D3B2D /* CardInputView.swift in Sources */,
+				A57DC8E82B73C86F004D3B2D /* ChatViewModel.swift in Sources */,
+				A57DC8F62B73C8CE004D3B2D /* AbarApp.swift in Sources */,
+				A57DC8E62B73C86F004D3B2D /* FinalCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +468,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A57DC8F72B73CC3E004D3B2D /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A57DC8F82B73CC3E004D3B2D /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A57DC8F72B73CC3E004D3B2D /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A52CEB192B57FD06008866CA /* Project object */;
 }
