@@ -7,12 +7,7 @@
 
 import SwiftUI
 
-struct CardInfo {
-    let cardIndex: Int
-    var userText: String
-    var link: String?
-}
-
+// Your CardInputView definition
 struct CardInputView: View {
     @Environment(\.presentationMode) var presentationMode
     @Binding var selectedCard: Int?
@@ -22,19 +17,26 @@ struct CardInputView: View {
     @State private var showLinkInput: Bool = false
     @State private var showQRCode = false
     @State private var selectedToolbarItem: String?
-    private let characterLimit = 200
-
+    @State private var navigateToFinalCard = false
+    @State private var showAISheet = false // State variable for AIView sheet
+    let category: String
+    
     var body: some View {
         NavigationView {
             VStack {
                 userInputTextEditor
                 characterCountText
                 linkInputFieldIfNeeded
+                NavigationLink(destination: PreviewView(category: category, cardIndex: selectedCard ?? 0, userInput: userInput, link: linkInput), isActive: $navigateToFinalCard) {
+                    EmptyView()
+                }
             }
-            .padding()
             .navigationBarItems(leading: cancelButton, trailing: saveButton)
             .toolbar { toolbarContent }
             .background(navigationLinkToQRCodeView)
+            .sheet(isPresented: $showAISheet) { // Sheet presentation for AIView
+                AIview()
+            }
         }.padding()
     }
     
@@ -47,7 +49,7 @@ struct CardInputView: View {
             }
         }
     }
-
+    
     private var userInputTextEditor: some View {
         ZStack(alignment: .topLeading) {
             TextEditor(text: $userInput)
@@ -63,13 +65,13 @@ struct CardInputView: View {
             userInput = String(newValue.prefix(characterLimit))
         }
     }
-
+    
     private var characterCountText: some View {
         Text("\(userInput.count)/\(characterLimit) characters")
             .foregroundColor(Color.gray)
             .padding(.top, 5)
     }
-
+    
     private var linkInputFieldIfNeeded: some View {
         Group {
             if showLinkInput {
@@ -78,26 +80,27 @@ struct CardInputView: View {
             }
         }
     }
-
+    
     private var cancelButton: some View {
         Button("Cancel") {
             presentationMode.wrappedValue.dismiss()
         }
     }
-
+    
     private var saveButton: some View {
         Button("Save") {
-            if let selectedCard = selectedCard {
-                let cardInfo = CardInfo(cardIndex: selectedCard, userText: userInput, link: linkInput.isEmpty ? nil : linkInput)
-                cardInfos.append(cardInfo)
-                if !linkInput.isEmpty {
-                    showQRCode = true
+            if let selectedCardIndex = selectedCard {
+                let newCardInfo = CardInfo(cardIndex: selectedCardIndex, userText: userInput, link: linkInput)
+                if let index = cardInfos.firstIndex(where: { $0.cardIndex == selectedCardIndex }) {
+                    cardInfos[index] = newCardInfo
+                } else {
+                    cardInfos.append(newCardInfo)
                 }
-               // presentationMode.wrappedValue.dismiss()
+                navigateToFinalCard = true // Set to true to trigger navigation
             }
         }
     }
-
+    
     private var toolbarContent: some ToolbarContent {
         ToolbarItemGroup(placement: .bottomBar) {
             CustomToolbarButton(label: "Auto", systemImage: "wand.and.rays", isSelected: selectedToolbarItem == "AI") {
@@ -111,19 +114,20 @@ struct CardInputView: View {
             }
         }
     }
-
-
-
+    
     private func performAutoCompletion() {
-        // AI Auto Completion logic
+        // Show AIView as a sheet
+        showAISheet = true
     }
-
+    
+    private let characterLimit = 200
+    
     struct CustomToolbarButton: View {
         let label: String
         let systemImage: String
         let isSelected: Bool
         let action: () -> Void
-
+        
         var body: some View {
             Button(action: action) {
                 VStack {
@@ -131,13 +135,4 @@ struct CardInputView: View {
                     Text(label).font(.caption)
                 }
                 .foregroundColor(isSelected ? Color("AccentColor") : Color.gray)
-            }
-        }
-    }
-}
-
-struct CardInputView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardInputView(selectedCard: .constant(nil), cardInfos: .constant([]))
-    }
-}
+            }}}}

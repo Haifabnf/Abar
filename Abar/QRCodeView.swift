@@ -1,8 +1,8 @@
 //
-//  QRcode.swift
-//  Abar
+//  QRCodeView.swift
+//  AbarEx
 //
-//  Created by Noura. on 15/07/1445 AH.
+//  Created by Noura. on 19/07/1445 AH.
 //
 
 import SwiftUI

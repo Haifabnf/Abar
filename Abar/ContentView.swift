@@ -1,217 +1,191 @@
 //
-//  ContentView.swift
-//  Abar
+// ContentView.swift
+// Abar
 //
-//  Created by haifa alfoiz on 17/01/2024.
-//
-
+// Created by haifa alfoiz on 17/01/2024. //
 import SwiftUI
 
 struct ContentView: View {
-    
     @State private var isSheetPresented = false
     @State private var selectedRectangleIndex: Int?
-    @State var searchTerm = ""
-    
+    @State private var searchTerm = ""
     
     var body: some View {
+        let customGradient = LinearGradient(
+            gradient: Gradient(colors: [Color("white"), Color("StartColor")]),
+            startPoint: .leading,
+            endPoint: .trailing )
         
-        //        var filteredIndices: [Int] {
-        //            if searchTerm.isEmpty {
-        //                return Array(0..<textArray.count)
-        //            } else {
-        //                return textArray.indices.filter {
-        //                    let localizedString = textArray[$0]
-        //                    let regularString = String(describing: localizedString)
-        //                    return regularString.lowercased().contains(searchTerm.lowercased())
-        //                }
-        //            }
-        //        }
+        let textArray = ["Happy Birthday", "Graduation", "New Job", "Memes", "Artist", "Gratitude"]
+        let imageNameArray = ["balloon23", "grad23", "clap23", "Sticker", "mic23", "flower23"]
         
-        
-        
-        NavigationView {
-            ScrollView {
-                VStack {
-                    
-                    HStack {
-                        TextField("search occasion...", text: $searchTerm)
-                            .padding(.leading, 27)
-                        
-                    } .padding(6)
-                        .background(Color(.systemGray5))
-                        .cornerRadius(15)
-                        .padding(.horizontal)
-                        .overlay(
-                            
-                            HStack {
-                                Image(systemName: "magnifyingglass")
-                                Spacer()
-                                Button(action: {}, label: {
-                                    Image(systemName: "mic.fill") })
-                                
-                            }.padding(.horizontal, 25)
-                                .foregroundColor(.gray)
-                            
-                            
-                        )
-                    
-                        .padding(.vertical, 10)
-                    
-                    
-                    
-                    Text("Special Ocassions")
-                        .font(.title2)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding()
-                    
-                    
-                    ScrollView(.horizontal, showsIndicators: false) {
-                                  HStack(spacing: 20) {
-                                      RectangleView(imageName: "image1", title: "Rectangle 1", destination: Text("Page 1"))
-                                      RectangleView(imageName: "image2", title: "Rectangle 2", destination: Text("Page 2"))
-                                      RectangleView(imageName: "image3", title: "Rectangle 3", destination: Text("Page 3"))
-                                  }
-                                  .padding()
-                              }
-                    
-                    
-                    
-                    Text("Occasions")
-                        .font(.title2)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding()
-                    
-                    LazyVGrid(columns: [GridItem(.flexible(), spacing: 0), GridItem(.flexible(), spacing: 0)]) {
-                        ForEach(1..<7) { index in
-                            createNavigationLink(index: index)
-                        }
-                    }
-                    
-                    
+        var filteredIndices: [Int] {
+            if searchTerm.isEmpty {
+                return Array(0..<textArray.count)
+            } else {
+                return textArray.indices.filter {
+                    let localizedString = textArray[$0].lowercased()
+                    return localizedString.contains(searchTerm.lowercased())
                 }
-                .navigationTitle("Explore")
-                
-                
-              
-            } .background(
-                LinearGradient(
-                stops: [
-                Gradient.Stop(color: Color(red: 0.5, green: 0.36, blue: 0.64), location: 0.07),
-                Gradient.Stop(color: Color(red: 0.71, green: 0.84, blue: 0.9), location: 0.40),
-                Gradient.Stop(color: Color(red: 0.95, green: 0.95, blue: 0.95), location: 0.89),
-                ],
-                startPoint: UnitPoint(x: 0.5, y: -0.26),
-                endPoint: UnitPoint(x: 0.5, y: 0.46)
-                )
-                )
+            }
         }
         
+        NavigationView {
+            VStack(alignment: .leading, spacing: 22) {
+                searchField
+                
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 22) {
+                        Text("Special Occasions")
+                            .font(.title2)
+                            .bold()
+                            //.padding(.horizontal)
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 20) {
+                                RectangleView(imageName: "Foundation Day", destination: FoundationDayCards())
+                                RectangleView(imageName: "Leap Event", destination: LeapEventCards())
+                            }
+                            //.padding(.horizontal)
+                        }
+                        
+                        Text("Occasions")
+                            .font(.title2)
+                            .bold()
+                            //.padding(.horizontal)
+                        
+                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+                            ForEach(filteredIndices, id: \.self) { index in
+                                NavigationLink(destination: destinationView(for: textArray[index])) {
+                                    occasionRectangle(index: index, customGradient: customGradient, textArray: textArray, imageNameArray: imageNameArray)
+                                }
+                            }
+                        }
+                       // .padding(.horizontal)
+
+                    }
+                }
+            }.padding()
+             .navigationBarTitle("Explore", displayMode: .large)
+            .navigationBarBackButtonHidden(true) // Hide the back button
+            .background(gradientBackground.edgesIgnoringSafeArea(.all))
+        
+        }
     }
-}
 
-
-struct RectangleView: View {
-    var imageName: String
-    var title: String
-    var destination: Text
+    private var searchField: some View {
+        TextField("Search occasion...", text: $searchTerm)
+            .padding(.leading, 35)
+            .padding(.vertical, 10) // Add vertical padding for better touch area
+            .background(Color(.systemGray6))
+            .opacity(0.5)
+            .cornerRadius(15)
+            .overlay(
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                        .padding(.leading, 10) // Add padding to align the icon inside the TextField
+                    
+                    Spacer() // This will push the magnifying glass to the left and the microphone to the right
+                    
+                    Button(action: {
+                        // Action for the microphone button
+                    }) {
+//                        Image(systemName: "mic.fill")
+//                            .padding(.trailing, 10) // Add padding to align the icon inside the TextField
+                    }
+                }
+            )
+            .foregroundColor(.gray)
+    }
     
+    private func occasionRectangle(index: Int, customGradient: LinearGradient, textArray: [String], imageNameArray: [String]) -> some View {
+        Rectangle()
+            .fill(customGradient)
+            .frame(width: 171, height: 117)
+            .cornerRadius(10)
+            .overlay(
+                VStack {
+                    Text(textArray[index])
+                        .foregroundColor(.black)
+                        .fontWeight(.semibold)
+                        .font(.subheadline)
+                        .frame(maxWidth: .infinity, alignment:.leading)
+                    
+                    Spacer() // Pushes everything above to the top
+                    
+                    HStack {
+                        Spacer() // Pushes everything after it to the right
+                        
+                        Image(imageNameArray[index])
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 45, height: 45)
+                    }
+                }
+                .padding(.all, 5)
+            )
+    }
+    
+    private var gradientBackground: some View {
+        LinearGradient(
+            gradient: Gradient(
+                stops: [
+                    .init(color: Color(red: 0.5, green: 0.36, blue: 0.64), location: 0.07),
+                    .init(color: Color(red: 0.71, green: 0.84, blue: 0.9), location: 0.20),
+                    .init(color: Color(white: 100), location: 0.45)
+                   // .init(color: Color(red: 0.95, green: 0.95, blue: 0.95), location: 0.89)
+                ]
+            ),
+            startPoint: .top,
+            endPoint: .bottom
+        )
+    }
+    
+}
+@ViewBuilder
+    private func destinationView(for occasion: String) -> some View {
+        switch occasion {
+        case "Happy Birthday":
+            BirthdaysCards()
+        case "Graduation":
+            GraduationCards()
+        case "New Job":
+            NewJobCards()
+        case "Memes":
+            MemesCards()
+        case "Artist":
+            ArtistsCards()
+        case "Gratitude":
+            GratitudeCards()
+        default:
+            Text("Not available")
+        }
+    }
+
+struct RectangleView<Destination: View>: View {
+    var imageName: String
+    let destination: Destination
+
     var body: some View {
         NavigationLink(destination: destination) {
             Rectangle()
-                .foregroundColor(.clear)
-                .background(Color(.systemGray5))
+                .fill(Color.black)
                 .frame(width: 214, height: 117)
                 .cornerRadius(10)
+                .shadow(radius: 2)
                 .overlay(
-                    Text(title)
-                        .foregroundColor(.black)
+                    Image(imageName)
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
                 )
         }
     }
 }
 
-func createNavigationLink(index: Int) -> some View {
-    let content: String
-    
-    switch index {
-    case 1:
-        content = "rec 1"
-    case 2:
-        content = "rec 2"
-    case 3:
-        content = "rec 3"
-    case 4:
-        content = "rec 4"
-    case 5:
-        content = "rec 5"
-    case 6:
-        content = "rec 6"
-    default:
-        content = "Unknown Page Content"
+// Preview
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
-
-    return NavigationLink(destination: DetailView(content: content)) {
-        createRectangle(index: index, content: content)
-    }
-    .buttonStyle(PlainButtonStyle())
-}
-
-func createRectangle(index: Int, content: String) -> some View {
-    Rectangle()
-        .foregroundColor(.clear)
-        .frame(width: 171, height: 117)
-        .background(Color(.systemGray5))
-        .cornerRadius(10)
-        .overlay(Text(content).foregroundColor(.black))
-        .padding()
-}
-
-
-struct DetailView: View {
-let content: String
-
-var body: some View {
-    VStack {
-        Text(content)
-            .padding()
-
-        // Customize additional content for each page
-        switch content {
-        case "rec 1":
-            Text("yeees this is page 1")
-                .padding()
-            
-        case "rec 2":
-            Text("page 2 !!!")
-                .padding()
-            
-        case "rec 3":
-            Text("nononono this page 3 ")
-                .padding()
-            
-        case "rec 4":
-            Text("Page 4 wohoo")
-                .padding()
-            
-        case "rec 5":
-            Text("yep yep page 5")
-                .padding()
-            
-        case "rec 6":
-            Text("page 6 laast")
-                .padding()
-            
-        default:
-            Text("Unknown Page Content").padding()
-        }
-    }
-    .navigationBarTitle("Detail Page")
-}
-}
-
-
-
-#Preview {
-    ContentView()
 }

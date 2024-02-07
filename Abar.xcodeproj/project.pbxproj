@@ -7,20 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AD5B49D2B6690F200BD2743 /* Birthdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5B49C2B6690F200BD2743 /* Birthdays.swift */; };
+		2A134DC52B6FB08100D248DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A134DC42B6FB08100D248DC /* ContentView.swift */; };
+		2A134DC72B6FB09E00D248DC /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A134DC62B6FB09E00D248DC /* GifImage.swift */; };
+		2A134DCB2B6FB16900D248DC /* FinalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A134DCA2B6FB16900D248DC /* FinalCardView.swift */; };
+		2A134DCD2B6FB1B500D248DC /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A134DCC2B6FB1B500D248DC /* Preview.swift */; };
+		2A134DCF2B6FB1E500D248DC /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A134DCE2B6FB1E500D248DC /* SplashPage.swift */; };
+		2ACC42FF2B7058B1006B64C4 /* LeapEventCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC42FE2B7058B1006B64C4 /* LeapEventCards.swift */; };
+		2ACC43012B706BE7006B64C4 /* GenericCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC43002B706BE7006B64C4 /* GenericCard.swift */; };
+		2ACC43032B7070DB006B64C4 /* NewJobCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC43022B7070DB006B64C4 /* NewJobCards.swift */; };
+		2ACC43052B707261006B64C4 /* MemesCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC43042B707261006B64C4 /* MemesCards.swift */; };
+		2ACC43072B70727B006B64C4 /* ArtistCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC43062B70727B006B64C4 /* ArtistCards.swift */; };
+		2ACC43092B7072A3006B64C4 /* GratitudeCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC43082B7072A3006B64C4 /* GratitudeCards.swift */; };
+		2ACC430C2B707502006B64C4 /* FoundationDayCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACC430B2B707501006B64C4 /* FoundationDayCards.swift */; };
+		2AD5B49D2B6690F200BD2743 /* BirthdaysCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5B49C2B6690F200BD2743 /* BirthdaysCards.swift */; };
 		2AD5B4A02B66912D00BD2743 /* CardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5B49F2B66912D00BD2743 /* CardInputView.swift */; };
 		2AD5B4A22B66918A00BD2743 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5B4A12B66918A00BD2743 /* QRCodeView.swift */; };
-		2AD5B4A42B669CEC00BD2743 /* Graduation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5B4A32B669CEC00BD2743 /* Graduation.swift */; };
+		2AD5B4A42B669CEC00BD2743 /* GraduationCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5B4A32B669CEC00BD2743 /* GraduationCards.swift */; };
+		9912F8A72B70DC2800F44513 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912F8A62B70DC2800F44513 /* ChatViewModel.swift */; };
+		9912F8A92B70DC5000F44513 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912F8A82B70DC5000F44513 /* OpenAIService.swift */; };
+		9912F8AB2B70DC7900F44513 /* AIview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912F8AA2B70DC7900F44513 /* AIview.swift */; };
+		9912F8AE2B70DCB700F44513 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9912F8AD2B70DCB700F44513 /* OpenAISwift */; };
+		9912F8B02B70E2BF00F44513 /* SplashPage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9912F8AF2B70E2BF00F44513 /* SplashPage.gif */; };
 		A52CEB252B57FD06008866CA /* AbarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CEB242B57FD06008866CA /* AbarApp.swift */; };
 		A52CEB292B57FD07008866CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52CEB282B57FD07008866CA /* Assets.xcassets */; };
 		A52CEB2C2B57FD07008866CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2AD5B49C2B6690F200BD2743 /* Birthdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthdays.swift; sourceTree = "<group>"; };
+		2A134DC42B6FB08100D248DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A134DC62B6FB09E00D248DC /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		2A134DCA2B6FB16900D248DC /* FinalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCardView.swift; sourceTree = "<group>"; };
+		2A134DCC2B6FB1B500D248DC /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		2A134DCE2B6FB1E500D248DC /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
+		2ACC42FE2B7058B1006B64C4 /* LeapEventCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapEventCards.swift; sourceTree = "<group>"; };
+		2ACC43002B706BE7006B64C4 /* GenericCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCard.swift; sourceTree = "<group>"; };
+		2ACC43022B7070DB006B64C4 /* NewJobCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJobCards.swift; sourceTree = "<group>"; };
+		2ACC43042B707261006B64C4 /* MemesCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemesCards.swift; sourceTree = "<group>"; };
+		2ACC43062B70727B006B64C4 /* ArtistCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCards.swift; sourceTree = "<group>"; };
+		2ACC43082B7072A3006B64C4 /* GratitudeCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeCards.swift; sourceTree = "<group>"; };
+		2ACC430B2B707501006B64C4 /* FoundationDayCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationDayCards.swift; sourceTree = "<group>"; };
+		2AD5B49C2B6690F200BD2743 /* BirthdaysCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysCards.swift; sourceTree = "<group>"; };
 		2AD5B49F2B66912D00BD2743 /* CardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInputView.swift; sourceTree = "<group>"; };
 		2AD5B4A12B66918A00BD2743 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
-		2AD5B4A32B669CEC00BD2743 /* Graduation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graduation.swift; sourceTree = "<group>"; };
+		2AD5B4A32B669CEC00BD2743 /* GraduationCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraduationCards.swift; sourceTree = "<group>"; };
+		9912F8A62B70DC2800F44513 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		9912F8A82B70DC5000F44513 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		9912F8AA2B70DC7900F44513 /* AIview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIview.swift; sourceTree = "<group>"; };
+		9912F8AF2B70E2BF00F44513 /* SplashPage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = SplashPage.gif; path = ../../SplashPage.gif; sourceTree = "<group>"; };
 		A52CEB212B57FD06008866CA /* Abar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52CEB242B57FD06008866CA /* AbarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbarApp.swift; sourceTree = "<group>"; };
 		A52CEB282B57FD07008866CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,17 +65,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9912F8AE2B70DCB700F44513 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ACC430A2B7074E0006B64C4 /* Special Occasions */ = {
+			isa = PBXGroup;
+			children = (
+				2ACC430B2B707501006B64C4 /* FoundationDayCards.swift */,
+				2ACC42FE2B7058B1006B64C4 /* LeapEventCards.swift */,
+			);
+			path = "Special Occasions";
+			sourceTree = "<group>";
+		};
 		2AD5B49B2B6690CB00BD2743 /* Occasions */ = {
 			isa = PBXGroup;
 			children = (
-				2AD5B49C2B6690F200BD2743 /* Birthdays.swift */,
-				2AD5B4A32B669CEC00BD2743 /* Graduation.swift */,
+				2ACC43002B706BE7006B64C4 /* GenericCard.swift */,
+				2ACC430A2B7074E0006B64C4 /* Special Occasions */,
+				2AD5B49C2B6690F200BD2743 /* BirthdaysCards.swift */,
+				2AD5B4A32B669CEC00BD2743 /* GraduationCards.swift */,
+				2ACC43022B7070DB006B64C4 /* NewJobCards.swift */,
+				2ACC43042B707261006B64C4 /* MemesCards.swift */,
+				2ACC43062B70727B006B64C4 /* ArtistCards.swift */,
+				2ACC43082B7072A3006B64C4 /* GratitudeCards.swift */,
 			);
 			path = Occasions;
 			sourceTree = "<group>";
@@ -67,8 +116,16 @@
 			isa = PBXGroup;
 			children = (
 				A52CEB242B57FD06008866CA /* AbarApp.swift */,
+				9912F8A62B70DC2800F44513 /* ChatViewModel.swift */,
+				9912F8A82B70DC5000F44513 /* OpenAIService.swift */,
+				9912F8AA2B70DC7900F44513 /* AIview.swift */,
+				2A134DC42B6FB08100D248DC /* ContentView.swift */,
 				2AD5B49F2B66912D00BD2743 /* CardInputView.swift */,
+				2A134DCA2B6FB16900D248DC /* FinalCardView.swift */,
+				2A134DCC2B6FB1B500D248DC /* Preview.swift */,
+				2A134DCE2B6FB1E500D248DC /* SplashPage.swift */,
 				2AD5B4A12B66918A00BD2743 /* QRCodeView.swift */,
+				9912F8AF2B70E2BF00F44513 /* SplashPage.gif */,
 				A52CEB282B57FD07008866CA /* Assets.xcassets */,
 				2AD5B49B2B6690CB00BD2743 /* Occasions */,
 				A52CEB2A2B57FD07008866CA /* Preview Content */,
@@ -79,6 +136,7 @@
 		A52CEB2A2B57FD07008866CA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				2A134DC62B6FB09E00D248DC /* GifImage.swift */,
 				A52CEB2B2B57FD07008866CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -100,6 +158,9 @@
 			dependencies = (
 			);
 			name = Abar;
+			packageProductDependencies = (
+				9912F8AD2B70DCB700F44513 /* OpenAISwift */,
+			);
 			productName = Abar;
 			productReference = A52CEB212B57FD06008866CA /* Abar.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +189,9 @@
 				Base,
 			);
 			mainGroup = A52CEB182B57FD06008866CA;
+			packageReferences = (
+				9912F8AC2B70DCB700F44513 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = A52CEB222B57FD06008866CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52CEB2C2B57FD07008866CA /* Preview Assets.xcassets in Resources */,
+				9912F8B02B70E2BF00F44513 /* SplashPage.gif in Resources */,
 				A52CEB292B57FD07008866CA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,11 +219,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AD5B4A42B669CEC00BD2743 /* Graduation.swift in Sources */,
+				9912F8AB2B70DC7900F44513 /* AIview.swift in Sources */,
+				2ACC43032B7070DB006B64C4 /* NewJobCards.swift in Sources */,
+				2A134DCB2B6FB16900D248DC /* FinalCardView.swift in Sources */,
+				2ACC430C2B707502006B64C4 /* FoundationDayCards.swift in Sources */,
+				2AD5B4A42B669CEC00BD2743 /* GraduationCards.swift in Sources */,
+				2A134DCD2B6FB1B500D248DC /* Preview.swift in Sources */,
+				9912F8A92B70DC5000F44513 /* OpenAIService.swift in Sources */,
+				2A134DC72B6FB09E00D248DC /* GifImage.swift in Sources */,
+				2ACC43072B70727B006B64C4 /* ArtistCards.swift in Sources */,
 				A52CEB252B57FD06008866CA /* AbarApp.swift in Sources */,
+				2ACC42FF2B7058B1006B64C4 /* LeapEventCards.swift in Sources */,
+				2ACC43012B706BE7006B64C4 /* GenericCard.swift in Sources */,
+				2A134DC52B6FB08100D248DC /* ContentView.swift in Sources */,
 				2AD5B4A22B66918A00BD2743 /* QRCodeView.swift in Sources */,
-				2AD5B49D2B6690F200BD2743 /* Birthdays.swift in Sources */,
+				2AD5B49D2B6690F200BD2743 /* BirthdaysCards.swift in Sources */,
+				2A134DCF2B6FB1E500D248DC /* SplashPage.swift in Sources */,
 				2AD5B4A02B66912D00BD2743 /* CardInputView.swift in Sources */,
+				2ACC43052B707261006B64C4 /* MemesCards.swift in Sources */,
+				9912F8A72B70DC2800F44513 /* ChatViewModel.swift in Sources */,
+				2ACC43092B7072A3006B64C4 /* GratitudeCards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,12 +383,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = twq.Abar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -331,12 +415,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = twq.Abar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -362,6 +450,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9912F8AC2B70DCB700F44513 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9912F8AD2B70DCB700F44513 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9912F8AC2B70DCB700F44513 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A52CEB192B57FD06008866CA /* Project object */;
 }
