@@ -35,7 +35,7 @@ let category = "New Job"
                 showingSheet = newValue != nil
             }
         }
-        .navigationBarTitle(category, displayMode: .large)
+        .navigationBarTitle("New Job", displayMode: .large)
         
     }
 }

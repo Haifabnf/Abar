@@ -35,7 +35,7 @@ let category = "Artists"
                 showingSheet = newValue != nil
             }
         }
-        .navigationBarTitle(category, displayMode: .large)
+        .navigationBarTitle("Artists", displayMode: .large)
         
     }
 }

@@ -37,7 +37,7 @@ let category = "Graduation"
                 showingSheet = newValue != nil
             }
         }
-        .navigationBarTitle(category, displayMode: .large)
+        .navigationBarTitle("Graduation", displayMode: .large)
         
     }
 }

@@ -35,7 +35,7 @@ let category = "Memes"
                 showingSheet = newValue != nil
             }
         }
-        .navigationBarTitle(category, displayMode: .large)
+        .navigationBarTitle("Memes", displayMode: .large)
         
     }
 }

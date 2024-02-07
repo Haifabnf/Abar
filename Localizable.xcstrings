@@ -1,0 +1,292 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld/%lld characters" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld/%2$lld حرف"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld/%2$lld characters"
+          }
+        }
+      }
+    },
+    "Artist" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فنانين"
+          }
+        }
+      }
+    },
+    "Artists" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فنانين"
+          }
+        }
+      }
+    },
+    "Ask" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسأل"
+          }
+        }
+      }
+    },
+    "Ask AI to help you express..." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسأل الذكاء الاصطناعي ليساعدك في التعبير.."
+          }
+        }
+      }
+    },
+    "Birthdays" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اعياد ميلاد"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الغاء"
+          }
+        }
+      }
+    },
+    "characters" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حروف"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم"
+          }
+        }
+      }
+    },
+    "Enter link" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ادخل رابط"
+          }
+        }
+      }
+    },
+    "Explore" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الرئيسية"
+          }
+        }
+      }
+    },
+    "Foundation Day" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوم التأسيس"
+          }
+        }
+      }
+    },
+    "Graduation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التخرج"
+          }
+        }
+      }
+    },
+    "Gratitude" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "امتناء"
+          }
+        }
+      }
+    },
+    "Happy Birthday" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اعياد ميلاد"
+          }
+        }
+      }
+    },
+    "Leap Event" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حدث ليب"
+          }
+        }
+      }
+    },
+    "Memes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ميمز"
+          }
+        }
+      }
+    },
+    "New Job" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وظيفة جديدة"
+          }
+        }
+      }
+    },
+    "Not available" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غير متوفر"
+          }
+        }
+      }
+    },
+    "Occasions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المناسبات"
+          }
+        }
+      }
+    },
+    "Preview" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معاينة"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حفظ"
+          }
+        }
+      }
+    },
+    "Search occasion..." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابحث عن المناسبة..."
+          }
+        }
+      }
+    },
+    "Special Occasions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المناسبات الخاصة"
+          }
+        }
+      }
+    },
+    "What would you like to say?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماذا تريد أن تقول؟"
+          }
+        }
+      }
+    },
+    "With AI you can express your words and feelings even better!! for example: ''i want to say happy birthday for my friend nouf.''" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مع الذكاء الاصطناعي يمكنك التعبير عن كلماتك و مشاعرك بشكل أفضل! كمثال: \"ابغى اقول كل عام وانتي بخير لصديقتي نوف\""
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

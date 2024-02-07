@@ -26,6 +26,7 @@
 		A57DC8F92B73CC3E004D3B2D /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = A57DC8F82B73CC3E004D3B2D /* OpenAISwift */; };
 		A57DC8FB2B73CDDE004D3B2D /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8FA2B73CDDE004D3B2D /* GifImage.swift */; };
 		A57DC8FD2B73CE04004D3B2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC8FC2B73CE04004D3B2D /* ContentView.swift */; };
+		A5CAF4992B73E72F00487EC4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A5CAF4982B73E72F00487EC4 /* Localizable.xcstrings */; };
 		A5DEA5BA2B70DAFE000C80E2 /* MemesCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5B92B70DAFE000C80E2 /* MemesCards.swift */; };
 		A5DEA5BC2B70DB34000C80E2 /* BirthdaysCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5BB2B70DB34000C80E2 /* BirthdaysCards.swift */; };
 		A5DEA5BE2B70DB97000C80E2 /* GenericCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA5BD2B70DB97000C80E2 /* GenericCards.swift */; };
@@ -58,6 +59,7 @@
 		A57DC8F52B73C8CE004D3B2D /* AbarApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbarApp.swift; path = "../../../Downloads/AbarFINAL/Abar 3/AbarApp.swift"; sourceTree = "<group>"; };
 		A57DC8FA2B73CDDE004D3B2D /* GifImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GifImage.swift; path = "../../../Downloads/Abar/Abar/Preview Content/GifImage.swift"; sourceTree = "<group>"; };
 		A57DC8FC2B73CE04004D3B2D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../Downloads/AbarFINAL/Abar 3/ContentView.swift"; sourceTree = "<group>"; };
+		A5CAF4982B73E72F00487EC4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A5DEA5B92B70DAFE000C80E2 /* MemesCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemesCards.swift; sourceTree = "<group>"; };
 		A5DEA5BB2B70DB34000C80E2 /* BirthdaysCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysCards.swift; sourceTree = "<group>"; };
 		A5DEA5BD2B70DB97000C80E2 /* GenericCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCards.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		A52CEB182B57FD06008866CA = {
 			isa = PBXGroup;
 			children = (
+				A5CAF4982B73E72F00487EC4 /* Localizable.xcstrings */,
 				A52CEB232B57FD06008866CA /* Abar */,
 				A52CEB222B57FD06008866CA /* Products */,
 			);
@@ -201,6 +204,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = A52CEB182B57FD06008866CA;
 			packageReferences = (
@@ -222,6 +226,7 @@
 			files = (
 				A52CEB2C2B57FD07008866CA /* Preview Assets.xcassets in Resources */,
 				A52CEB292B57FD07008866CA /* Assets.xcassets in Resources */,
+				A5CAF4992B73E72F00487EC4 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Abar/Preview Content\"";
+				DEVELOPMENT_TEAM = BK775HBBA8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -402,7 +408,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = twq.Abar;
+				PRODUCT_BUNDLE_IDENTIFIER = twq.Abar2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -422,6 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Abar/Preview Content\"";
+				DEVELOPMENT_TEAM = BK775HBBA8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -434,7 +441,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = twq.Abar;
+				PRODUCT_BUNDLE_IDENTIFIER = twq.Abar2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

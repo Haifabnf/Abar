@@ -34,7 +34,7 @@ let category = "Gratitude"
                 showingSheet = newValue != nil
             }
         }
-        .navigationBarTitle(category, displayMode: .large)
+        .navigationBarTitle("Gratitude", displayMode: .large)
         
     }
 }

@@ -34,7 +34,7 @@ let category = "Leap Event"
                 showingSheet = newValue != nil
             }
         }
-        .navigationBarTitle(category, displayMode: .large)
+        .navigationBarTitle("Leap Event", displayMode: .large)
         
     }
 }

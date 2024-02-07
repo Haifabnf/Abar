@@ -36,7 +36,7 @@ let category = "Foundation Day"
                 showingSheet = newValue != nil
             }
         }
-        .navigationBarTitle(category, displayMode: .large)
+        .navigationBarTitle("Foundation Day", displayMode: .large)
         
     }
 }
